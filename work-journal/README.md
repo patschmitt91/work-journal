@@ -1,4 +1,103 @@
-# React + TypeScript + Vite
+# Patrick Schmitt - Work Journal
+
+A personal work journal documenting my journey as a Cloud & AI Solution Engineer. Built with React, TypeScript, and Material-UI, this application showcases insights from cloud architecture, AI development, and modern solutions. Designed to be hosted as a static website on Azure Blob Storage.
+
+## About
+
+This is the professional work journal of Patrick Schmitt, a Cloud & AI Solution Engineer specializing in:
+- Azure cloud architecture
+- AI development and integration
+- C# and .NET solutions
+- DevOps and modern web development
+
+## Features
+
+- Clean, blog-inspired UI using Material-UI
+- Responsive design (mobile, tablet, desktop)
+- Intuitive navigation with top app bar and mobile drawer
+- Journal entry management (chronological organization)
+- Professional color palette and typography
+- Ready for light/dark mode implementation
+- Markdown support for journal entries (coming soon)
+
+## Tech Stack
+
+- **React 19** - UI library
+- **TypeScript** - Type safety
+- **Vite** - Build tool and dev server
+- **Material-UI v7** - Component library
+- **React Router** - Client-side routing
+- **Emotion** - CSS-in-JS styling
+
+## Getting Started
+
+### Prerequisites
+
+- Node.js (v18 or higher recommended)
+- npm or yarn
+
+### Installation
+
+```bash
+# Install dependencies
+npm install
+
+# Start development server
+npm run dev
+
+# Build for production
+npm run build
+
+# Preview production build
+npm run preview
+```
+
+The app will be available at `http://localhost:5173`
+
+## Project Structure
+
+```
+src/
+├── components/       # Reusable components
+│   └── Navigation.tsx
+├── pages/           # Page components
+│   ├── Home.tsx
+│   ├── JournalEntries.tsx
+│   ├── About.tsx
+│   └── Contact.tsx
+├── theme.ts         # Material-UI theme configuration
+├── App.tsx          # Main app component with routing
+└── main.tsx         # Application entry point
+```
+
+## Available Pages
+
+- **Home** - Welcome section with recent journal entries
+- **Journal Entries** - Full list of all journal entries with search
+- **About** - Personal information and purpose of the journal
+- **Contact** - Contact form and social links
+
+## Next Steps
+
+- [ ] Implement markdown file reading for journal entries
+- [ ] Add search and filter functionality
+- [ ] Implement tags/categories system
+- [ ] Add dark mode toggle
+- [ ] Create individual entry view page
+- [ ] Set up Azure Blob Storage deployment
+- [ ] Add CI/CD pipeline
+
+## Deployment
+
+This application is designed to be deployed as a static website on Azure Blob Storage. Build the production bundle with `npm run build` and upload the `dist` folder contents to your Azure storage container.
+
+## License
+
+Personal project - feel free to use as inspiration for your own work journal!
+
+---
+
+## React + TypeScript + Vite
 
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
